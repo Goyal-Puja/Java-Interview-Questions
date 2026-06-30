@@ -30,4 +30,12 @@
    - The Comparable interface is used to define the natural ordering of objects. A class that implement Comparable must override the CompareTo() method, which compares the current object with another object of the same type.
    - The Comparator interface is used to define myltiple ways of sorting objects. Unlike Comparable, we don't need to modify the class whose objects we want to sort. Instead, we create separate class that implements the Comparator interface and override the Compare() method.
 
-## 8. 
+## 8. String Builder and String Buffer
+   - String Builder is not thread safe, faster and it is not synchronized.
+   - String Buffer is thread safe, slower as compared to string Builder and it is synchronized.
+   - if we are working with singly thread environment and we don't need thread safety in this case, we can prefer string builder due to its better performance.
+
+## 9. Checked and Unchecked Exception 
+   - Checked eexceptions are exceptions that are checked at compile-time. ( IOException, SQLException, ClassNotFoundException )
+   - Unchecked exceptions are exceptions that are not checked at compile-time. These exceeptions are subclass of RunTimeException. ( ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException )
+
