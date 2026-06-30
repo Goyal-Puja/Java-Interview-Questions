@@ -9,7 +9,22 @@
    - HashMap allows one null key because it handles null manually and is not synchronized. so there is no ambiguity during retrieval. it used bucket index 0 for null key.
    - HashTable being synchronized and thread-safe, does not allow null key or value because in concurrent environment a null from get would be ambigous - it would be clear whether the key is absent or mapped to null. To avoid this ambiguity, HashTable prohibits null entrirely.
 
- ## 3. What is the difference between final, finally, and finalize() in Java?
-    - Final is used to define constants, prevent method overriding and prevent inheritance. when a variable is declared ad final, its value can't be changed. A method declared as final can't be overridden by subclass. A class declared as final can't be subclassed.
-    - Finally is used in Exception Handling. it contains code that will always be executed after the try block, regardless of whether an exception was thrown or not. This is typically used for resource cleanup like closing files or database connections.
-    - Finalize() is a method in the object class that is called by the garbage collector before an object is destroyed.
+## 3. What is the difference between final, finally, and finalize() in Java?
+   - Final is used to define constants, prevent method overriding and prevent inheritance. when a variable is declared ad final, its value can't be changed. A method declared as final can't be overridden by subclass. A class declared as final can't be subclassed.
+   - Finally is used in Exception Handling. it contains code that will always be executed after the try block, regardless of whether an exception was thrown or not. This is typically used for resource cleanup like closing files or database connections.
+   - Finalize() is a method in the object class that is called by the garbage collector before an object is destroyed.
+
+## 4. Functional Interface and Maker Interface
+   - A Functional Interface contains exactlt one abstract method and is designed to support Lambda expression and Method reference.
+   - A Maker Interface has no method or field at all and used to attach meta data or runtime capabilities to an object/
+
+## 5. Which collection have we used most in production - HashMap or ConcurrentHashMap?
+   - In production, HashMap is used for more frequently because most data staructures are not shared across thread, and it provides better performance.
+   - ConcurrentHashMap is used only in scenario where multiple thread need to safely access and modify the map.
+
+## 6. How does java handle memory leaks?
+   - Java automatically handles memory leaks through garbage collection. The JVM identifies and frees up memory that is no longer being used by the application.
+
+## 7. Comparable and Comparator Interface
+   ### In Java, both Comparable and Comparator are interface used for sorting objects.
+   - 
