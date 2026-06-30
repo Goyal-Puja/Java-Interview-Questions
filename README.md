@@ -15,7 +15,7 @@
    - Finalize() is a method in the object class that is called by the garbage collector before an object is destroyed.
 
 ## 4. Functional Interface and Maker Interface
-   - A Functional Interface contains exactlt one abstract method and is designed to support Lambda expression and Method reference.
+   - A Functional Interface contains exactly one abstract method and is designed to support Lambda expression and Method reference.
    - A Maker Interface has no method or field at all and used to attach meta data or runtime capabilities to an object/
 
 ## 5. Which collection have we used most in production - HashMap or ConcurrentHashMap?
