@@ -37,5 +37,12 @@
 
 ## 9. Checked and Unchecked Exception 
    - Checked eexceptions are exceptions that are checked at compile-time. ( IOException, SQLException, ClassNotFoundException )
-   - Unchecked exceptions are exceptions that are not checked at compile-time. These exceeptions are subclass of RunTimeException. ( ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException )
+   - Unchecked exceptions are exceptions that are not checked at compile-time. These exceeptions are subclass of RunTimeException.   ( ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException )
+
+## 10. User-defined Exceptions
+   - User-defined exceptuons are the exceptions created by the programmers to use their own designed exception and those are not present in the java exception library.
+   ### To create a user-defined exception :
+   - Create a class that extends Exception ( for checked exception ) or RunTimeException ( for unchecked exception ).
+   - Provide constructor to initialize the exception with custom messages.
+   - Add methods to provide additional deatails about the exception.
 
