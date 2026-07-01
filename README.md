@@ -109,5 +109,24 @@
 
 ## 22. What is the purpose of the "this" keyword in Java? 
    - "this" keyword in Java is used to refer to the current object of a class.
+
+## 23. Spring v/s Spring Boot
+   ### Spring
+   - Spring framework is a widely used Java EE framework for building application.
+   - The primary feature of the spring framework is dependency injection.
+   - It helps to make things simpler by allowing us to develop loosely coupled applications.
+   - To test the spring project, we need to setup the server manually.
+   - It does not provide support for an in-memory database like H2.
+   - Developers manually define dependencies for the spring project in pom.xml.
+   ### Spring Boot
+   - Spring Boot framework is widely used to develop REST APIs.
+   - The primary feature of spring boot is AutoConfiguration. It automatically configures the classes based on the requirement.
+   - It helps to create stand-alone application with less configuration.
+   - Spring Boot offers embedded server such as Tomcat.
+   - It offers several plugins for working with an embedded and in-memory database such as H2.
+   - Spring Boot comes with the concept of starter in pom.xml file that internally takes care of downloading the dependencies JARs based on the spring boot requirement.
+   - It provides production-ready features such as metrics, health check etc.
+
+     
    
 
