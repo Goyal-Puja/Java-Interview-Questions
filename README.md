@@ -82,5 +82,16 @@
 ## 17. is Map interface a part of the collection framework?
    - In Java, The Map interface is not a part of the collection framework because it does not extend the Collection interface.
    - The collection framework is designed for a group of individual elements like List, Set and Queue. on the other hand, Map stores key-value pairs instead of individual elements.
+
+## 18. forEach() and map()
+   ### In Java, both forEach() and map() are used to iterate over collection.
+   ### forEach()
+   - Used for iterating over a collection and performing an operation on each element.
+   - Does not return a new collection.
+   - Used for side effects like modifying elements, printing or updating variables.
+   ### map()
+   - Transform each elemnet in a stream and return a new stream with the modified elements.
+   - Does return a new stream with modified elements.
+   - Does not modify the original collection, instead it creates a new transformed collection.
    
 
