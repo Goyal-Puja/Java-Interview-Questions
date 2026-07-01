@@ -103,5 +103,11 @@
    - HashMap does not maintain any order of keys or values but TreeMap maintains keys in sorted order.
    - HashMap has constant time complexity for add() and remove() method but TreeMap has O(logn) higher time complexity.
    - HashMap allows one null key and any no of null values, TreeMap does not allow null key but allow null values.
+
+## 21. If we want to use an Employee object as a key in a HashMap, what changes are required?
+   - If we want to use an Employee object as a key in a HashMap, we must override equals() and hashcode() methods. This ensures that object with the same data are treated as equal key instead of different ones based on memory reference.
+
+## 22. What is the purpose of the "this" keyword in Java? 
+   - "this" keyword in Java is used to refer to the current object of a class.
    
 
