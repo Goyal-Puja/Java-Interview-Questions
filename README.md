@@ -93,5 +93,15 @@
    - Transform each elemnet in a stream and return a new stream with the modified elements.
    - Does return a new stream with modified elements.
    - Does not modify the original collection, instead it creates a new transformed collection.
+
+## 19. HashSet and TreeSet
+   - HashSet does not maintain any order of elements but TreeSet maintains elements in sorted order.
+   - HashSet has constant time complexity for add() and remove() method but TreeSet has O(logn) higher time complexity.
+   - HashSet allows a single null elements but TreeSet does not because we need to compare the elements in TreeSet.
+
+## 20. HashMap and TreeMap
+   - HashMap does not maintain any order of keys or values but TreeMap maintains keys in sorted order.
+   - HashMap has constant time complexity for add() and remove() method but TreeMap has O(logn) higher time complexity.
+   - HashMap allows one null key and any no of null values, TreeMap does not allow null key but allow null values.
    
 
