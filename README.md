@@ -35,18 +35,49 @@
    - String Buffer is thread safe, slower as compared to string Builder and it is synchronized.
    - if we are working with singly thread environment and we don't need thread safety in this case, we can prefer string builder due to its better performance.
 
-## 9. Checked and Unchecked Exception 
+## 9. Explain the hierarchy of exception in Java.
+   ### In Java, all exceptions are errors are derived from Throwable class. Throwable has two main subclasses : Error and Exception
+   - Error represents serious issues like OutOfMemoryError which are usually not recoverable and should not be caught.
+   - Exception represents condition that the program can handle, and its further divided into : Checked exception and Unchecked exception
+
+## 10. Checked and Unchecked Exception 
    - Checked eexceptions are exceptions that are checked at compile-time. ( IOException, SQLException, ClassNotFoundException )
    - Unchecked exceptions are exceptions that are not checked at compile-time. These exceeptions are subclass of RunTimeException.   ( ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException )
 
-## 10. User-defined Exceptions
+## 11. User-defined Exceptions
    - User-defined exceptuons are the exceptions created by the programmers to use their own designed exception and those are not present in the java exception library.
    ### To create a user-defined exception :
    - Create a class that extends Exception ( for checked exception ) or RunTimeException ( for unchecked exception ).
    - Provide constructor to initialize the exception with custom messages.
    - Add methods to provide additional deatails about the exception.
 
-## 11. MYSQL and MongoDB
+## 12. Throw and Throws
+   - Throw is used inside a method or block of code to explicitly throw an exception. Throws is used in the method signature to declare that a method might throw exception.
+   - Throw can throw only one exception at a time, Throws can declare multiple exception separated by commas.
+   - Throw can be used to throw both checked and unchecked exception, but it is mainly used for throwing custom exceptions. Throws is used to propagate checked exception to the caller of the method.
+
+## 13. MySQL and MongoDB
    - Mysql is a relational database management system (RDMS) based on SQL, with fixed schema and structured data storage. it is suitable for applications with well defined schemas and relationships. Example : An e-commerce website where we need to store information about users, products, orders and payments. we would define tables such as 'users', 'products' and 'payments' with predefined columns like user_id, product_name, order_date etc. we would establish relationships between these tables using foreign keys.
    - MongoDb is NoSQL database that uses a flexible, schema-less document model. it is designed for scalability, high performance and handling unstructured and semi-structured data. Example : A blogging platform where users can create posts with different structures and tags. we would have a collection named 'posts' where each document represents a post. The document structure can vary from post to post; some have additional field like 'tags', 'comments' or 'attachments'. MongoDB allow for flexible schema design with predefined structures.
+
+## 14. What is the difference between "==" and ".equals()" in Java?
+   - "==" compares whether two string objects point to the same memory location.
+   - ".equals()" compares their values.
+
+## 15. Features of String 
+   - In Java, String is immutable which means once a string object is created, its values can't be changed. If we try to modify a string, a new string object is created instead of modifying the original one.
+   - String is an immutable object. A string object can't be changed once it is created.
+   - Java maintains a special memory area called the String pool or String literal pool. This pool  holds a unique reference to each literal string, which ensures that there is only one copy of each string in memory.
+   - String is immutable, it is thread-safe and can be shared across multiple threads without sunchronization.
+   ### To create an immutable class,
+   - Make the class final : This prevents the class from being subclassed which ensures that it's behavior can't be changed.
+   - Make all the fields private and final : This ensures that field can't be modified directly after the object is created.
+   - Provide no setter methods : Setter modify the state of an object, not having them ensures that the state can't be modified.
+   - Initilaize fields via constructor : The fields should be initialized in the constructor, and there should be no way to modify them after the object is created.
+   - Provide getter methods.
+
+## 16. How String pool works?
+   - When we create a String using a string literal, Java checks if the string already exists in the string pool, if it does, it reuse the existing instance. If not it add the string to the pool. String created using the new keyword do not automatically go to the string pool. To manually intern such strings, we can use the .intern() method, which places them in the pool if they are not already there.
+
+   
 
