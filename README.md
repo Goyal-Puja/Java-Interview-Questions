@@ -79,5 +79,8 @@
 ## 16. How String pool works?
    - When we create a String using a string literal, Java checks if the string already exists in the string pool, if it does, it reuse the existing instance. If not it add the string to the pool. String created using the new keyword do not automatically go to the string pool. To manually intern such strings, we can use the .intern() method, which places them in the pool if they are not already there.
 
+## 17. is Map interface a part of the collection framework?
+   - In Java, The Map interface is not a part of the collection framework because it does not extend the Collection interface.
+   - The collection framework is designed for a group of individual elements like List, Set and Queue. on the other hand, Map stores key-value pairs instead of individual elements.
    
 
