@@ -44,5 +44,10 @@
    ### To create a user-defined exception :
    - Create a class that extends Exception ( for checked exception ) or RunTimeException ( for unchecked exception ).
    - Provide constructor to initialize the exception with custom messages.
+
+## 11. MYSQL and MongoDB
+   - Mysql is a relational database management system (RDMS) based on SQL, with fixed schema and structured data storage. it is suitable for applications with well defined schemas and relationships. Example : An e-commerce website where we need to store information about users, products, orders and payments. we would define tables such as 'users', 'products' and 'payments' with predefined columns like user_id, product_name, order_date etc. we would establish relationships between these tables using foreign keys.
+   - MongoDb is NoSQL database that uses a flexible, schema-less document model. it is designed for scalability, high performance and handling unstructured and semi-structured data. Example : A blogging platform where users can create posts with different structures and tags. we would have a collection named 'posts' where each document represents a post. The document structure can vary from post to post; some have additional field like 'tags', 'comments' or 'attachments'. MongoDB allow for flexible schema design with predefined structures.
+
    - Add methods to provide additional deatails about the exception.
 
