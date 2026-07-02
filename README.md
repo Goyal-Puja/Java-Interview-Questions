@@ -149,7 +149,11 @@
    - /actuator/info : Shows application-specific information like version, build etc.
    - /actuator/loggers : Allows viewing and changing log levels at runtime. we can dynamically change the log level of a specific class to debug or troubleshoot issues in production.
 
-## 28. End to end flow for endpoint
+## 28. What are Java 8 Default and Static methods in interfaces, and why were they introduced?
+   - Default methods allow developers to add new methods to existing interfaces with a concrete implementation without breaking backward compatibility for implementing classes.
+   - Static methods allow utility logic to be attached directly to the interface definition rather than needing a separate utility class.
+
+## 29. End to end flow for endpoint
    ### In a spring boot application, we typically use the MVC pattern for organizing the code. when building RESTful services, the core components are usually : the controller, the service and the repository. 
    - Controller handles HTTP requests.
    - Service contains the business logic.
