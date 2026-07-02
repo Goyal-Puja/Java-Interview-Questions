@@ -142,5 +142,22 @@
    - Constructor injection : Dependencies are provided through constructor.
    - Setter injection : Dependencies are provided via setter methods.
    - Field injection : Dependencies are injected directly into field via annotation i.e @Autowired.
+
+## 27. Commonly used spring boot actuator endpoints :
+   - /actuator/health : Provides the health status of the appliction.
+   - /actuator/metrics : Displays various metrics related to the applicaion.
+   - /actuator/info : Shows application-specific information like version, build etc.
+   - /actuator/loggers : Allows viewing and changing log levels at runtime. we can dynamically change the log level of a specific class to debug or troubleshoot issues in production.
+
+## 28. End to end flow for endpoint
+   ### In a spring boot application, we typically use the MVC pattern for organizing the code. when building RESTful services, the core components are usually : the controller, the service and the repository. 
+   - Controller handles HTTP requests.
+   - Service contains the business logic.
+   - Repository interacts with database.
+   ### Lets assume we are building an endpoint that handles product management, like creating a new product or fetching an existing product from a database. The flow begins when a client sends a HTTP request to the server.
+   - The controller receives the request and delegates the task to the service layer.
+   - The service contains business logic and calls the repository to interact with the database.
+   - The repository performs the database operations.
+   - The service returns result to the controller, which formats the response and sends it back to the client.
    
 
