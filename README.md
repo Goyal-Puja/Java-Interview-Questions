@@ -127,6 +127,20 @@
    - Spring Boot comes with the concept of starter in pom.xml file that internally takes care of downloading the dependencies JARs based on the spring boot requirement.
    - It provides production-ready features such as metrics, health check etc.
 
-     
+## 24. @SpringBootApplication (Entry point of the Spring application)
+   ### Combination of three annotations : @EnableAutoConfiguration, @ComponentScan, @Configuration
+   - @EnableAutoConfiguration : Enables spring boot autoconfiguration mechanism.
+   - @ComponentScan : Enables component scanning to detect beans.
+   - @Configuration : Marks the class as a configuration class to define beans.
+
+## 25. Starter dependencies 
+   - Spring Boot starter is a maven template that contains a collection of all the relevant dependencies that are needed to start a particular functionality, like we need to import spring-boot-starter-web dependency for creating a web application.
+
+## 26. Dependency injection
+   - The process of injecting dependent bean object into target bean object is called dependency injection.
+   ### Types of dependency injection in spring :
+   - Constructor injection : Dependencies are provided through constructor.
+   - Setter injection : Dependencies are provided via setter methods.
+   - Field injection : Dependencies are injected directly into field via annotation i.e @Autowired.
    
 
