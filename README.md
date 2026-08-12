@@ -166,7 +166,17 @@
 
 ## 30. what will happen if we try to modify a final variable?
    - A final variable can be assigned a value only once.
-     final int age = 25;
-     age = 30; // compilation error
-     The code will fail at compile time with an error because the variable's value can't be changed after initialization. 
+   - final int age = 25;
+   - age = 30; // compilation error
+   - The code will fail at compile time with an error because the variable's value can't be changed after initialization.
+
+## 31. what is Concurrent modification?
+   - Concurrent modification means modifying a collection while we are iterating over it.
+   - For Example : If we are iterating over an ArrayList using an iterator and at the same time we add or remove an element directly from the list, it can cause a ConcurrentModificationException. This happen because ArrayList uses a fast-fail iterator.
+   - To avoid this, we can Iterator.remove(), removeIf() or a concurrent collcetion such as CopyOnWriteArratList depending on the requirement.
+
+## 32. what is the Serialization in Java? why do we need it?
+   - Serialization is the process of converting a Java object into byte stream so that it can be stored in a file, sent over a network, or saved in a database.
+   - For Example : If we want to send an Employee object from one application to another, Java first converts that object into bytes.
+   - The receiving application converts those bytes back into an Employee object.
 
