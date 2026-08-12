@@ -189,3 +189,8 @@
    - we frequently insert or remove elements at the beginning or in the middle.
    - Random access is not priority.
 
+## Suppose we have one object of ArrayList class and we are declaring it as final, can we add elements to it? and if we assigning this object to some new ArrayList object, can we add elements to it, if yes what is the benefit of final? 
+  - we can add elements to ArrayList if we declare it as final. final does not make the ArrayList immutable. it makes the reference variable immutable.
+  - But, we can't assign a new ArrayList to it because list is final, it can't point to another object.
+  - The main benefit is preventing reassignment. it guarantees that the reference will always point to the same ArrayList object.
+
