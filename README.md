@@ -180,3 +180,12 @@
    - For Example : If we want to send an Employee object from one application to another, Java first converts that object into bytes.
    - The receiving application converts those bytes back into an Employee object.
 
+## 33. ArrayList or LinkedList, when to use which?
+###    Use ArrayList when:
+   - we frequently access elements by index.
+   - Insertions and deletions are infrequent.
+   - Memory efficiency is important.
+###      Use LinkedList when:
+   - we frequently insert or remove elements at the beginning or in the middle.
+   - Random access is not priority.
+
