@@ -163,5 +163,10 @@
    - The service contains business logic and calls the repository to interact with the database.
    - The repository performs the database operations.
    - The service returns result to the controller, which formats the response and sends it back to the client.
-   
+
+## 30. what will happen if we try to modify a final variable?
+   - A final variable can be assigned a value only once.
+     final int age = 25;
+     age = 30; // compilation error
+     The code will fail at compile time with an error because the variable's value can't be changed after initialization. 
 
